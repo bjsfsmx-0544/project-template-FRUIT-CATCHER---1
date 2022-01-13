@@ -1,7 +1,7 @@
 class Form{
     constructor(){
-       this.input = createInput("Name");
-       this.button = createButton('Play');
+       this.input = createInput("Nombre");
+       this.button = createButton('Jugar');
        this.greeting = createElement('h2');
        this.title = createElement('h2');
     }
@@ -12,7 +12,7 @@ class Form{
         this.title.hide();
     }
     display() {
-        this.title.html("FRUIT CATCHER");
+        this.title.html("ATRAPA FRUTA");
         this.title.position(350, 50);
         this.title.style('font-size', '70px');
         this.title.style('color', 'skyblue');
@@ -34,7 +34,7 @@ class Form{
             player.index = playerCount;
             player.update();
             player.updateCount(playerCount);
-            this.greeting.html("Hello " + player.name)
+            this.greeting.html("Hola, " + player.name)
             this.greeting.position(400,250);
             this.greeting.style('color', 'white');
             this.greeting.style('font-size', '100px');
